@@ -1,0 +1,67 @@
+{
+  "auction": {
+    "issue_url": "https://github.com/18F/tock/issues/288",
+    "start_price": 3500,
+    "start_datetime": "2016-01-11T18:00:00.000+00:00",
+    "end_datetime": "2016-01-12T22:00:00.000+00:00",
+    "title": "Save hours in Tock throughout the week ",
+    "description": "# Save hours in Tock throughout the week \r\n\r\n## Description\r\n\r\nTock is a simple time tracking app that 18F employees use to report their time on a weekly basis. The application also provides some light data visualization tools that allow users to look at what users have logged time to a project, as well as what projects to which a user has logged time.  This issue seeks to allow users to update their time cards throughout the week.\r\n\r\n## Auction rules \r\n\r\nRegistered users on micropurchase.18f.gov may bid to deliver the requirements in this auction. The lowest bidder at the time the auction closes shall receive the award. The awarded bidder shall have five business days after notice of award to deliver the requirements. Upon successful completion of the requirements, 18F shall pay the winning bidder.\r\n\r\n## Application-specific acceptance criteria\r\n\r\n- A user may save a partially completed time sheet.\r\n- The user has the option to save a time card without submitting (e.g. via a “save time card” button).\r\n- The user has the option to submit a time card (e.g. through the existing “submit time card” button).\r\n- Time cards should have a status flag (e.g. a column added to the hours table/model) which indicates the following states:\r\n-     time card has not been submitted\r\n-     time card has been submitted\r\n- The API endpoints that publish time card data exclude time cards that have not been submitted.\r\n- Other parts of the application that rely on time card data only reference submitted time card data.\r\n- Create a new API endpoint for time cards that have not been submitted.\r\n\r\n## General acceptance criteria\r\n\r\n- B or better code climate grade and 90% or higher test coverage for all modifications.\r\n- Tests adequately cover any new functionality.\r\n- Tests run on Travis-CI and do not break the build.\r\n- New features do not degrade accessibility (use pa11y/HTML Code Sniffer).\r\n\r\n## Resources\r\n\r\nInstructions for installing Tock locally and loading sample data: https://github.com/18F/tock/blob/master/README.md#getting-started\r\n\r\n## Deliverables\r\n\r\nA single pull request submitted to https://github.com/18F/tock with clear, descriptive commits that satisfy all of the above acceptance criteria.\r\n",
+    "created_at": "2016-01-11T16:28:02.214+00:00",
+    "updated_at": "2016-01-12T20:56:02.355+00:00",
+    "summary": "Tock is a simple time tracking app that 18F employees use to report their time on a weekly basis. The application also provides some light data visualization tools that allow users to look at what users have logged time to a project, as well as what projects to which a user has logged time.  This issue seeks to allow users to update their time cards throughout the week.",
+    "id": 4,
+    "bids": [
+      {
+        "bidder_id": 101,
+        "auction_id": 4,
+        "amount": 374,
+        "created_at": "2016-01-11T21:32:49.207+00:00",
+        "updated_at": "2016-01-11T21:32:49.207+00:00",
+        "id": 60,
+        "bidder": {
+          "github_id": "123456789",
+          "duns_number": "987654321",
+          "name": "Micro-machine Man",
+          "created_at": "2016-01-05T18:43:53.080+00:00",
+          "updated_at": "2016-01-11T03:15:51.626+00:00",
+          "email": "micromachine@example.com",
+          "sam_account": true
+        }
+      },
+      {
+        "bidder_id": 222,
+        "auction_id": 4,
+        "amount": 375,
+        "created_at": "2016-01-11T18:56:01.056+00:00",
+        "updated_at": "2016-01-11T18:56:01.056+00:00",
+        "id": 48,
+        "bidder": {
+          "github_id": "007",
+          "duns_number": "008675309",
+          "name": "James Bond",
+          "created_at": "2015-12-30T13:59:52.801+00:00",
+          "updated_at": "2016-01-11T17:52:30.508+00:00",
+          "email": "bond@james.bond",
+          "sam_account": true
+        }
+      },
+      {
+        "bidder_id": 101,
+        "auction_id": 4,
+        "amount": 400,
+        "created_at": "2016-01-11T18:52:34.320+00:00",
+        "updated_at": "2016-01-11T18:52:34.320+00:00",
+        "id": 47,
+        "bidder": {
+          "github_id": "123456789",
+          "duns_number": "987654321",
+          "name": "Micro-machine Man",
+          "created_at": "2016-01-05T18:43:53.080+00:00",
+          "updated_at": "2016-01-11T03:15:51.626+00:00",
+          "email": "micromachine@example.com",
+          "sam_account": true
+        }
+      }
+    ]
+  }
+}
