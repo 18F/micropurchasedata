@@ -17,6 +17,16 @@ class Auction {
             a.push(bids[i].bidder.duns_number);
     return a;
   }
+
+  /**
+   * getWinningBid
+   * Returns the winning DUNS number and amount for the auction
+   **/
+  getWinningBid() {
+    var bid = this.data.bids[0]
+    return {"bidder": bid.bidder.duns_number, "amount": bid.amount};
+  }
+
 }
 
 module.exports = Auction;

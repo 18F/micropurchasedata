@@ -18,4 +18,10 @@ describe("Testing Auction", function(){
     })
   })
 
+  describe("winning bid", function (){
+    it("winning bid should be an object with proper bidder/amount", function (){
+      var auction = new Auction(data);
+      expect(auction.getWinningBid()).to.deep.equal({"bidder": "987654321", "amount":374})
+    })
+  })
 })
