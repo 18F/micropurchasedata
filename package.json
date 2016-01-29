@@ -8,12 +8,14 @@
     "request": "^2.67.0"
   },
   "devDependencies": {
-    "mocha": "^2.3.4",
-    "chai": "^3.4.1"
+    "babel-cli": "^6.4.5",
+    "browserify": "^13.0.0",
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
   },
   "scripts": {
     "test": "mocha"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "V. David Zvenyach <vladlen.zvenyach@gsa.gov>",
+  "license": "CC0"
 }
