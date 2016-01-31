@@ -9,12 +9,26 @@
   },
   "devDependencies": {
     "babel-cli": "^6.4.5",
+    "babel-preset-es2015": "^6.3.13",
+    "babelify": "^7.2.0",
     "browserify": "^13.0.0",
     "chai": "^3.4.1",
+    "documentation": "^3.0.4",
     "mocha": "^2.3.4"
   },
   "scripts": {
+    "document": "node_modules/.bin/documentation Auction.js -f md > docs/Auction.md",
+    "build": "node_modules/.bin/browserify Auction.js -s Auction -t babelify | uglifyjs > auction.min.js",
     "test": "mocha"
+  },
+  "browserify": {
+    "transform": [
+      ["babelify", {
+        "presets": [
+          "es2015"
+        ]
+      }]
+    ]
   },
   "author": "V. David Zvenyach <vladlen.zvenyach@gsa.gov>",
   "license": "CC0"

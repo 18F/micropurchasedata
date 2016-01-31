@@ -1,13 +1,16 @@
 "use strict";
+/**
+  * Class representing an Auction.
+  * @param {Object} data - The auction JSON data.
+  */
 class Auction {
-
   constructor(data) {
     this.data = data;
   }
 
   /**
-   * getUniqueBidders
-   * Returns the DUNS numbers for each unique bidder in the auction
+   * @function
+   * @returns {Array} - unique DUNS numbers for the auction.
    **/
   getUniqueBidders() {
     var a = [];
@@ -19,8 +22,8 @@ class Auction {
   }
 
   /**
-   * getWinningBid
-   * Returns the winning DUNS number and amount for the auction
+   * @function
+   * @returns {Object} - winning DUNS number and amount for the auction
    **/
   getWinningBid() {
     var bid = this.data.bids[0]
