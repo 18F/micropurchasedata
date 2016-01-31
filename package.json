@@ -1,6 +1,6 @@
 {
   "name": "micropurchasedata",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "Auction.js",
   "dependencies": {
@@ -23,11 +23,14 @@
   },
   "browserify": {
     "transform": [
-      ["babelify", {
-        "presets": [
-          "es2015"
-        ]
-      }]
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015"
+          ]
+        }
+      ]
     ]
   },
   "author": "V. David Zvenyach <vladlen.zvenyach@gsa.gov>",
