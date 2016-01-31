@@ -1,6 +1,8 @@
 "use strict";
 /**
   * Class representing an Auction.
+  *
+  * Usage: `var a = new Auction(data).getUniqueBidders()`;
   * @param {Object} data - The auction JSON data.
   */
 class Auction {
