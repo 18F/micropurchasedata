@@ -1,7 +1,7 @@
 var expect = require('chai').expect;
 var fs = require('fs');
-var Auction = require('./Auction');
-var data = JSON.parse(fs.readFileSync('testData.json')).auction;
+var Auction = require('../index').Auction;
+var data = JSON.parse(fs.readFileSync('tests/testData.json')).auction;
 
 describe("Testing Auction", function(){
   describe("constructor", function (){

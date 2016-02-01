@@ -12,10 +12,14 @@ To help take advantage of this API, we've written a module that can derive key m
 
 The documentation for the Auction class is available at [docs/Auction.md](docs/Auction.md).
 
+In the browser, use [auction.min.js](dist/auction.min.js) located in the `dist` folder. For use in node, see below.
+
 ## Example usage
 
 ``` js
-var Auction = require('Auction');
+var Auction = require('micropurchase-data').Auction;
+
+// This assumes that data is the value of the `auctions` value from the /auctions endpoint  
 function getUniqueBiddersFromAuctions(data) {
   return data.map(function (d) {
     var a = new Auction(d);

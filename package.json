@@ -2,7 +2,7 @@
   "name": "micropurchase-data",
   "version": "1.2.0",
   "description": "Deriving key metrics for each auction on the 18F micro-purchase platform",
-  "main": "Auction.js",
+  "main": "index.js",
   "dependencies": {
     "minimist": "^1.2.0",
     "request": "^2.67.0"
@@ -17,9 +17,9 @@
     "mocha": "^2.3.4"
   },
   "scripts": {
-    "document": "node_modules/.bin/documentation Auction.js -f md > docs/Auction.md",
-    "build": "node_modules/.bin/browserify Auction.js -s Auction -t babelify | uglifyjs > auction.min.js",
-    "test": "mocha"
+    "document": "node_modules/.bin/documentation lib/Auction.js -f md > docs/Auction.md",
+    "build": "node_modules/.bin/browserify lib/Auction.js -s Auction -t babelify | uglifyjs > dist/auction.min.js",
+    "test": "mocha tests"
   },
   "browserify": {
     "transform": [
