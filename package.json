@@ -1,7 +1,7 @@
 {
-  "name": "micropurchasedata",
+  "name": "micropurchase-data",
   "version": "1.2.0",
-  "description": "",
+  "description": "Deriving key metrics for each auction on the 18F micro-purchase platform",
   "main": "Auction.js",
   "dependencies": {
     "minimist": "^1.2.0",
@@ -34,5 +34,6 @@
     ]
   },
   "author": "V. David Zvenyach <vladlen.zvenyach@gsa.gov>",
-  "license": "CC0"
+  "license": "CC0",
+  "repository": "https://github.com/18F/micropurchasedata"
 }
