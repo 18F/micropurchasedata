@@ -1,6 +1,6 @@
 {
   "name": "micropurchase-data",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "Deriving key metrics for each auction on the 18F micro-purchase platform",
   "main": "index.js",
   "dependencies": {
